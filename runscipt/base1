@@ -1,0 +1,25 @@
+
+output1=$(basename $input1| awk -F "_" '{print($4"_"$5)}')
+output2=$(basename $input2| awk -F "_" '{print($4"_"$5)}')
+
+mkdir  $SCRATCH/data/fastqc/${output1}
+mkdir  $SCRATCH/data/clippedreads/${output1}
+mkdir  $SCRATCH/data/alignment/${output1}
+mkdir  $SCRATCH/data/sorted/${output1}
+#echo $output1
+#echo $output2
+
+cutadapt -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG -A GATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG -A CAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTC -u 6 -U 6 -q 22 -m 22 -o $SCRATCH/data/clippedreads/${output1}/clipped_${output1}_R1.fastq.gz -p $SCRATCH/data/clippedreads/${output1}/clipped_${output2}_R2.fastq.gz $input1 $input2 
+
+fastqc -o $SCRATCH/data/fastqc/${output1}/      $SCRATCH/data/clippedreads/${output1}/clipped_${output1}_R1.fastq.gz
+fastqc -o $SCRATCH/data/fastqc/${output2}/	$SCRATCH/data/clippedreads/${output1}/clipped_${output2}_R2.fastq.gz
+
+hisat2 -p 32 -x $indexsnp -1 $SCRATCH/data/clippedreads/${output1}/clipped_${output1}_R1.fastq.gz -2 $SCRATCH/data/clippedreads/${output1}/clipped_${output2}_R2.fastq.gz -S $SCRATCH/data/alignment/${output1}/${output1}_align.sam --un-conc-gz $SCRATCH/data/alignment/${output1}/${output1}_unaligned.gz
+
+
+samtools view -@ 32 -bS $SCRATCH/data/alignment/${output1}/${output1}_align.sam |samtools sort -@ 32 -o $SCRATCH/data/sorted/${output1}/${output1}_sorted.bam   
+samtools index -@ 32 -b $SCRATCH/data/sorted/${output1}/${output1}_sorted.bam
+stringtie -M 0.75  -e -p 32 -G $WORK/chessmod.gtf -b $SCRATCH/data/ballgown/${output1}/ -A $SCRATCH/data/ballgown/${output1}/gene_abundance.tab $SCRATCH/data/sorted/${output1}/${output1}_sorted.bam -o $SCRATCH/data/misc/${output1}/n.gtf
+
+
+
