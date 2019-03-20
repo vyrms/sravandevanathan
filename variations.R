@@ -13,9 +13,9 @@ plot.var = function(dataset){
         values[y] = dataset[x,y+1]
       }
     }
-    variances[x] =  log(sd(values))
+    variances[x] =  log(sd(values)+0.00001)
   }
-  plot(density(variances),xlim=c(-10,20))
+  plot(density(variances),xlim=c(-20,10))
 }
 plot.var(mergedtdata20)
 plot.var(genes40)
