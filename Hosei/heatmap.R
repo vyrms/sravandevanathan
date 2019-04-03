@@ -14,5 +14,8 @@ myheatmap = function(data){
                                             hjust = 1)))
 }
 
-myheatmap(corgenes)
 myheatmap(cortdata)
+myheatmap(corgenes)
+
+myheatmap(log2(corgenes))
+myheatmap(log2(cortdata))
