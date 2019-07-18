@@ -1,8 +1,8 @@
 clas = c('NULL', NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
          ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA)
-filteredgenes = read.csv('C:/Users/Hosei/Documents/0lab/sravandevanathan/filteredgenes.csv'
+filteredgenes = read.csv('C:/Users/Hosei/Documents/0lab/sravandevanathan/Hosei/filtering/filteredgenes.csv'
                  ,colClasses = clas)
-filteredtdata = read.csv('C:/Users/Hosei/Documents/0lab/sravandevanathan/filteredtdata.csv'
+filteredtdata = read.csv('C:/Users/Hosei/Documents/0lab/sravandevanathan/Hosei/filtering/filteredtdata.csv'
                  ,colClasses = clas)
 
 
