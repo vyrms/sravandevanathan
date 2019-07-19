@@ -10,7 +10,12 @@ samples.list
 bg = ballgown(samples = samples.list, meas='FPKM') # generation of a ballgown object 
 sampleNames(bg) # sanity check sample names
 
-bg@expr[["exon"]]
+View(bg)
+View(bg@expr[['trans']])
+View(bg@expr[['exon']])
+View(bg@expr[['intron']])
+View(bg@indexes[['i2t']])
+View(bg@indexes[['t2g']])
 
 
 # make bg from gzip?
