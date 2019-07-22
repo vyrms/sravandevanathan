@@ -1,15 +1,23 @@
 install.packages('dplyr')
-library(dplyr)
 install.packages('matrixStats')
-library(matrixStats)
 install.packages('tidyr')
-library(tidyr)
 install.packages('CARS')
-library(CARS)
 install.packages('ggplot2')
-library(ggplot2)
 install.packages('installr')
+install.packages('ape')
+install.packages('data.table')
+install.packages('pheatmap')
+
+library(dplyr)
+library(matrixStats)
+library(tidyr)
+library(CARS)
+library(ggplot2)
 library(installr)
+library(ape)
+library(data.table)
+library(pheatmap)
+
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
@@ -22,7 +30,6 @@ install.packages('devtools')
 library(devtools)
 devtools::install_github("klutometis/roxygen")
 library(roxygen2)
-
 
 
 
