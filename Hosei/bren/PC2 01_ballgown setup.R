@@ -5,7 +5,7 @@ gene.info <- t_data[c(9,10)]# where gene.info is subseted from
 
 
 #folder with all the files
-setwd("C:/Users/Hosei/Documents/sravandevanathan/ballgown") 
+setwd("C:/Users/Seraph/Documents/sravandevanathan/ballgown_all") 
 
 # generate sample list: *** all samples included
 samples.list <- list.files(path =".")
@@ -14,7 +14,7 @@ samples.list
 samples.list <- colnames(expressed.genes) 
 samples.list
 
-bg = ballgown(samples = samples.list, meas='FPKM') # generation of a ballgown object 
+bg = ballgown(samples = samples.list, meas='all') # generation of a ballgown object 
 sampleNames(bg) # sanity check sample names
 
 

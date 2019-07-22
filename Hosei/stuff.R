@@ -3,9 +3,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 BiocManager::install("ballgown")
 session_info()
-# update R
 
-library(ballgown)
 
 # Hadley Wickham read book
 
@@ -14,3 +12,6 @@ library(ballgown)
 
 # get wd (working directory)
 getwd()
+
+# list all packages in library
+library()

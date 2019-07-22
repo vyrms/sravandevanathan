@@ -7,15 +7,16 @@ setwd("C:/Users/Hosei/Documents/sravandevanathan/ballgown")
 samples.list <- list.files(path =".")
 samples.list
 
-bg = ballgown(samples = samples.list, meas='FPKM') # generation of a ballgown object 
+bg = ballgown(samples = samples.list, meas='all') # generation of a ballgown object 
 sampleNames(bg) # sanity check sample names
 
 View(bg)
 View(bg@expr[['trans']])
 View(bg@expr[['exon']])
 View(bg@expr[['intron']])
-View(bg@indexes[['i2t']])
+View(bg@indexes[['e2t']])
 View(bg@indexes[['t2g']])
+View(bg@structure[['intron']]@seqnames)
 
 
 # make bg from gzip?
