@@ -34,4 +34,9 @@ checkAssembledTx()
 
 
 
+plotTranscripts('DDX11L1', bg, 
+                samples= samples.list, 
+                meas='cov', colorby='transcript')
+
+
 
