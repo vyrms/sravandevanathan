@@ -23,14 +23,18 @@ getCounts = function(gene_name,bg, exon=TRUE){
   mrcounts = exon_info[ , grepl(paste(x_id, "|chr|strand|start|end|mrcount", sep=''), names(exon_info) ) ]
   
   
-  e_t_id = x2t[which(x2t$t_id %in% a),]
+  e_t_id = x2t[which(x2t$t_id %in% wanted_tid),]
   
   final = list(mrcounts = mrcounts, x2t = e_t_id)
   
   return(final)
 }
 
-test = getCounts('RPL11', bg, exon=TRUE)
-View(test)
-View(test[[1]])
-View(test[[2]])
+rpl11exon = getCounts('RPL11', bg, exon=TRUE)
+View(rpl11exon)
+View(rpl11exon[[1]])
+View(rpl11exon[[2]])
+
+
+rpl11intron = getCounts('RPL11', bg, exon=FALSE)
+View(rpl11intron[[1]])

@@ -1,22 +1,60 @@
+# for transforming data
 install.packages('dplyr')
-install.packages('matrixStats')
 install.packages('tidyr')
+
+install.packages('matrixStats')
 install.packages('CARS')
-install.packages('ggplot2')
+install.packages('reshape')
 install.packages('installr')
 install.packages('ape')
 install.packages('data.table')
 install.packages('pheatmap')
 
+# make visualizations
+install.packages('ggplot2')
+install.packages('ggforce')
+install.packages('GGally')
+install.packages('ggmosaic')
+
+# for obtaining and working with geo-spatial data structures
+install.packages('sf')
+install.packages('rnaturalearth')
+install.packages('cartogram')
+
+# for working with statistical model and summaries
+install.packages('MASS')
+install.packages('broom')
+install.packages('forecast')
+
+# for running R code in response to user input
+install.packages('shiny')
+
+# for combining multiple views and combining results
+install.packages('htmltools')
+install.packages('htmlwidgets')
+
 library(dplyr)
-library(matrixStats)
 library(tidyr)
+library(matrixStats)
 library(CARS)
-library(ggplot2)
 library(installr)
 library(ape)
 library(data.table)
 library(pheatmap)
+library(reshape)
+library(ggplot2)
+library(ggforce)
+library(GGally)
+library(ggmosaic)
+library(sf)
+library(rnaturalearth)
+library(cartogram)
+library(MASS)
+library(broom)
+library(forecast)
+library(shiny)
+library(htmltools)
+library(htmlwidgets)
 
 
 if (!requireNamespace("BiocManager", quietly = TRUE))

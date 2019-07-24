@@ -16,3 +16,5 @@ final = exons[which(exons$e_id %in% exon_id),]
 
 mrcounts = final[ , grepl("e_id|chr|strand|start|end|mrcount", names(final) ) ]
 
+exp = colnames(expressed.genes)
+bg@dirs[-which(bg@dirs %in% exp)]
