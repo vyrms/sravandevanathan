@@ -30,11 +30,16 @@ getCounts = function(gene_name,bg, exon=TRUE){
   return(final)
 }
 
-rpl11exon = getCounts('RPL11', bg, exon=TRUE)
+rpl11exon = getCounts('RPL11', bg)
 View(rpl11exon)
 View(rpl11exon[[1]])
 View(rpl11exon[[2]])
 
 
-rpl11intron = getCounts('RPL11', bg, exon=FALSE)
-View(rpl11intron[[1]])
+
+
+CDK11Aexon = getCounts('CDK11A', bg)
+
+
+
+

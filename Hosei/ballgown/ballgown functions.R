@@ -1,7 +1,7 @@
 library(ballgown)
 
 #folder with all the files
-setwd("C:/Users/Hosei/Documents/sravandevanathan/ballgown_all") 
+setwd("C:/Users/Seraph/Documents/sravandevanathan/ballgown_filtered") 
 
 # generate sample list: *** all samples included
 samples.list <- list.files(path =".")

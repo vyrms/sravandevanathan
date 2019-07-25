@@ -16,6 +16,10 @@ install.packages('ggforce')
 install.packages('GGally')
 install.packages('ggmosaic')
 
+install.packages('plotly')
+if (!require(remotes)) install.packages("remotes")
+remotes::install_github("cpsievert/plotly_book")
+
 # for obtaining and working with geo-spatial data structures
 install.packages('sf')
 install.packages('rnaturalearth')
@@ -35,6 +39,7 @@ install.packages('htmlwidgets')
 
 library(dplyr)
 library(tidyr)
+
 library(matrixStats)
 library(CARS)
 library(installr)
@@ -42,17 +47,25 @@ library(ape)
 library(data.table)
 library(pheatmap)
 library(reshape)
+
 library(ggplot2)
 library(ggforce)
 library(GGally)
 library(ggmosaic)
+
+library(plotly)
+library(plotlyBook)
+
 library(sf)
 library(rnaturalearth)
 library(cartogram)
+
 library(MASS)
 library(broom)
 library(forecast)
+
 library(shiny)
+
 library(htmltools)
 library(htmlwidgets)
 

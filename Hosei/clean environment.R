@@ -6,7 +6,7 @@ cleanEnvironment <- function(keep = NULL){
   if ( length(keep) == 0 ){
     keep <- c()
   }else {
-    keep <- c(keep)
+    keep <- c(keep, 'cleanEnvironment')
   }
   
   items <- ls(envir=.GlobalEnv)
@@ -25,4 +25,4 @@ cleanEnvironment <- function(keep = NULL){
 }
 
 
-cleanEnvironment(keep=c('bg'))
+cleanEnvironment(keep=c('bg', 'getCounts2'))

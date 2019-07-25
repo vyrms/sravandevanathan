@@ -16,3 +16,5 @@ colnames(meltedRPL11Exon) = c('e_id', 'sample', 'mrcount')
 ggplot(meltedRPL11Exon) + 
   geom_point(aes(x = e_id, y = mrcount, color = sample))+
   geom_line(aes(x=e_id, y=mrcount, color = sample))
+
+
