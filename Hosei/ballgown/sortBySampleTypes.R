@@ -8,18 +8,16 @@ sortBySampleTypes = function(table, phenoList){
                       pheno.filtered[['mutant']][['severe']]), use.names = FALSE)
 
   
-  wildtype = table[which(colnames(table) %in%
-                c(colnames(table[, c(1,2,3,4,5)]), paste('mrcount.', wildtype, sep = '')))]
-  carrier = table[which(colnames(table) %in%
-                          c(colnames(table[, c(1,2,3,4,5)]), paste('mrcount.', carrier, sep = '')))]
-  affected = table[which(colnames(table) %in%
-                           c(colnames(table[, c(1,2,3,4,5)]), paste('mrcount.', affected, sep = '')))]
+  wildtype = table[grepl(paste(c(colnames(table[, c(1,2,3,4,5)]), wildtype), collapse = '|'), 
+                         colnames(table))]
+  carrier = table[grepl(paste(c(colnames(table[, c(1,2,3,4,5)]), carrier), collapse = '|'),
+                        colnames(table))]
+  affected = table[grepl(paste(c(colnames(table[, c(1,2,3,4,5)]), affected), collapse = '|'),
+                         colnames(table))]
   
   return(list(wildtype = wildtype, carier = carrier, affected =  affected))
 }
 
-
 RPL11exonfiltered = sortBySampleTypes(RPL11exon, pheno.filtered)
-
-
+RPL11exonfiltered$wildtype
 
