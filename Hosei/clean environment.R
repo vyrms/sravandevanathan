@@ -25,4 +25,4 @@ cleanEnvironment <- function(keep = NULL){
 }
 
 
-cleanEnvironment(keep=c('bg', 'getCounts2'))
+cleanEnvironment(keep=c('bg', 'getCounts2', 'RPL11', 'full.pheno'))

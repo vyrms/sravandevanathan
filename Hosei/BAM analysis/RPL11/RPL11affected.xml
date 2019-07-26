@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" hasGeneTrack="true" hasSequenceTrack="true" locus="chr1:23694605-23695887" path="C:\Users\Seraph\Documents\sravandevanathan\Hosei\BAM analysis\RPL11\RPL11affected.xml" version="8">
+    <Resources>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L2_CTTGTA_RPL11.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L2_GATCAG_RPL11.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L6_CGATGT_RPL11.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L6_GGCTAC_RPL11.bam"/>
+    </Resources>
+    <Panel height="10828" name="Panel1564086055376" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;1184.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L2_CTTGTA_RPL11.bam_coverage" name="L2_CTTGTA_RPL11.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1184.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L2_CTTGTA_RPL11.bam_junctions" name="L2_CTTGTA_RPL11.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L2_CTTGTA_RPL11.bam" name="L2_CTTGTA_RPL11.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="7216" name="Panel1564086055402" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;639.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L6_CGATGT_RPL11.bam_coverage" name="L6_CGATGT_RPL11.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="639.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L6_CGATGT_RPL11.bam_junctions" name="L6_CGATGT_RPL11.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes\RPL11\L6_CGATGT_RPL11.bam" name="L6_CGATGT_RPL11.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="9428" name="Panel1564158525481" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;1261.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L2_GATCAG_RPL11.bam_coverage" name="L2_GATCAG_RPL11.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1261.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L2_GATCAG_RPL11.bam_junctions" name="L2_GATCAG_RPL11.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L2_GATCAG_RPL11.bam" name="L2_GATCAG_RPL11.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="9078" name="Panel1564158525500" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;1077.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L6_GGCTAC_RPL11.bam_coverage" name="L6_GGCTAC_RPL11.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="1077.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L6_GGCTAC_RPL11.bam_junctions" name="L6_GGCTAC_RPL11.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\RPL11\L6_GGCTAC_RPL11.bam" name="L6_GGCTAC_RPL11.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="96" name="FeaturePanel" width="1117">
+        <Track clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" visible="true"/>
+        <Track altColor="0,0,178" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;402.0;255,255,255;0,0,178" fontSize="10" height="35" id="hg38_genes" name="Gene" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.01090909090909091,0.29454545454545455,0.5163636363636364,0.7018181818181818,0.9018181818181819"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

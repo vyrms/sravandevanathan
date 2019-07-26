@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" hasGeneTrack="true" hasSequenceTrack="true" locus="chr1:1703235-1729416" nextAutoscaleGroup="2" path="C:\Users\Seraph\Documents\sravandevanathan\Hosei\BAM analysis\CDK11A\CDK11Acarriers.xml" version="8">
+    <Resources>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_CAGATC_CDK11A.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_GCCAAT_CDK11A.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_CGATGT_CDK11A.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_ACTTGA_CDK11A.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_TGACCA_CDK11A.bam"/>
+        <Resource path="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L2_ATCACG_CDK11A.bam"/>
+    </Resources>
+    <Panel height="741" name="Panel1564157288563" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;10.0;255,255,255;175,175,175" fontSize="10" height="40" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_CGATGT_CDK11A.bam_coverage" name="L3_CGATGT_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="863.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="40" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_CGATGT_CDK11A.bam_junctions" name="L3_CGATGT_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="SQUISHED" experimentType="OTHER" fontSize="10" height="40" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_CGATGT_CDK11A.bam" name="L3_CGATGT_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="5984" name="Panel1564158665804" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;421.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L2_ATCACG_CDK11A.bam_coverage" name="L2_ATCACG_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="421.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L2_ATCACG_CDK11A.bam_junctions" name="L2_ATCACG_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L2_ATCACG_CDK11A.bam" name="L2_ATCACG_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="3408" name="Panel1564158665892" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;221.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_ACTTGA_CDK11A.bam_coverage" name="L6_ACTTGA_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="221.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_ACTTGA_CDK11A.bam_junctions" name="L6_ACTTGA_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_ACTTGA_CDK11A.bam" name="L6_ACTTGA_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="4220" name="Panel1564158665978" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;270.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_GCCAAT_CDK11A.bam_coverage" name="L6_GCCAAT_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="270.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_GCCAAT_CDK11A.bam_junctions" name="L6_GCCAAT_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_GCCAAT_CDK11A.bam" name="L6_GCCAAT_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="7566" name="Panel1564158701271" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;620.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_TGACCA_CDK11A.bam_coverage" name="L3_TGACCA_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="620.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_TGACCA_CDK11A.bam_junctions" name="L3_TGACCA_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L3_TGACCA_CDK11A.bam" name="L3_TGACCA_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="4668" name="Panel1564158701326" width="1117">
+        <Track autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" color="175,175,175" colorScale="ContinuousColorScale;0.0;326.0;255,255,255;175,175,175" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_CAGATC_CDK11A.bam_coverage" name="L6_CAGATC_CDK11A.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="326.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track clazz="org.broad.igv.sam.SpliceJunctionTrack" fontSize="10" height="60" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_CAGATC_CDK11A.bam_junctions" name="L6_CAGATC_CDK11A.bam Junctions" visible="true"/>
+        <Track clazz="org.broad.igv.sam.AlignmentTrack" displayMode="EXPANDED" experimentType="RNA" fontSize="10" id="C:\Users\Seraph\Documents\sravandevanathan\BAM files\grep_genes_filtered\CDK11A\L6_CAGATC_CDK11A.bam" name="L6_CAGATC_CDK11A.bam" visible="true">
+            <RenderOptions/>
+        </Track>
+    </Panel>
+    <Panel height="40" name="FeaturePanel" width="1117">
+        <Track clazz="org.broad.igv.track.SequenceTrack" fontSize="10" height="40" id="Reference sequence" name="Reference sequence" visible="true"/>
+        <Track altColor="0,0,178" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;402.0;255,255,255;0,0,178" fontSize="10" height="40" id="hg38_genes" name="Gene" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.00967741935483871,0.14838709677419354,0.31451612903225806,0.48870967741935484,0.6612903225806451,0.832258064516129,0.9629032258064516"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
