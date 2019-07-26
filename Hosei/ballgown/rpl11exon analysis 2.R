@@ -1,8 +1,8 @@
-wildtype = full.pheno[['Wildtype']]
+wildtype = unlist(full.pheno[['Wildtype']], use.names = FALSE)
 
 RPL11exon = RPL11[[1]]
 
 RPL11exon[]
 
-grepl(wildtype, colnames(RPL11exon))
-paste(wildtype, sep='|')
+
+which(colnames(RPL11exon) %in% wildtype)
