@@ -2,19 +2,16 @@ library(ggplot2)
 library(reshape)
 library(ggforce)
 
-rpl11exonmrcounts = rpl11exon[[1]]
-rpl11exonetid = rpl11exon[[2]]
-
 hist(rpl11exonetid$e_id, breaks = 22, ylim = range(0,14))
 
 
-rpl11exonmrcountsRemoved = rpl11exonmrcounts[,-c(2,3,4,5)]
+RPL11exonRemoved = RPL11exon[,-c(1,2,3,5)]
 
-meltedRPL11Exon = melt(rpl11exonmrcountsRemoved, id.vars = 'e_id')
-colnames(meltedRPL11Exon) = c('e_id', 'sample', 'mrcount')
+meltedRPL11Exon = melt(RPL11exonRemoved, id.vars = 'start')
+colnames(meltedRPL11Exon) = c('start', 'sample', 'mrcount')
 
 ggplot(meltedRPL11Exon) + 
-  geom_point(aes(x = e_id, y = mrcount, color = sample))+
-  geom_line(aes(x=e_id, y=mrcount, color = sample))
+  geom_point(aes(x = start, y = mrcount, color = sample))+
+  geom_line(aes(x=start, y=mrcount, color = sample))
 
 
