@@ -19,7 +19,7 @@ sortBySampleTypes = function(table, phenoList){
 }
 
 
-yay = sortBySampleTypes(RPL11exon, pheno.filtered)
+RPL11exonfiltered = sortBySampleTypes(RPL11exon, pheno.filtered)
 
 
 
