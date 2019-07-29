@@ -4,9 +4,11 @@
 cleanEnvironment <- function(keep = NULL){
   
   if ( length(keep) == 0 ){
-    keep <- c('cleanEnvironment', 'getCounts2', 'bg', 'RPL11', 'CDK11A', 'pheno.filtered', 'sortBySampleTypes')
+    keep <- c('cleanEnvironment', 'getCounts2', 'bg', 'RPL11', 'CDK11A', 
+              'pheno.filtered', 'sortByPheno')
   }else {
-    keep <- c(keep, 'cleanEnvironment', 'getCounts2', 'bg', 'RPL11', 'CDK11A', 'pheno.filtered', 'sortBySampleTypes')
+    keep <- c(keep, 'cleanEnvironment', 'getCounts2', 'bg', 'RPL11', 'CDK11A', 
+              'pheno.filtered', 'sortByPheno')
   }
   
   items <- ls(envir=.GlobalEnv)

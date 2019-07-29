@@ -1,7 +1,7 @@
 
 # separate either wildtype, carrier, or affected individuals
 
-sortBySampleTypes = function(table, phenoList){
+sortByPheno = function(table, phenoList){
   wildtype = unlist(phenoList[['wildtype']], use.names = FALSE)
   carrier = unlist(phenoList[['mutant']][['carrier']], use.names = FALSE)
   affected = unlist(c(pheno.filtered[['mutant']][['intermediate']], 
@@ -18,6 +18,6 @@ sortBySampleTypes = function(table, phenoList){
   return(list(wildtype = wildtype, carier = carrier, affected =  affected))
 }
 
-RPL11exonfiltered = sortBySampleTypes(RPL11exon, pheno.filtered)
+RPL11exonfiltered = sortByPheno(RPL11exon, pheno.filtered)
 RPL11exonfiltered$wildtype
 
