@@ -3,11 +3,14 @@ RPL11exon = RPL11[[1]]
 
 RPL11exSorted = sortByPheno(RPL11exon, pheno.filtered)
 
-RPL11exWildtype = RPL11exSorted[['wildtype']]
+RPL11exWt = RPL11exSorted[['wildtype']]
 
-RPL11exSorted[['wildtype']][6]/sum(RPL11exSorted[['wildtype']][6])
 
-apply(RPL11exWildtype[,6], 2, sum)
+yay = apply(RPL11exWildtype[,6:ncol(RPL11exWildtype)], 2, sum)
+
+RPL11exWildtype[6:ncol(RPL11exWildtype)]/yay
+
+RPL11exWildtype[1,6]/sum(RPL11exWildtype[,6])
 
 
 
